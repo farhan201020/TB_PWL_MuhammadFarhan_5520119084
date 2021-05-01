@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<!-- Modal Tambah Data -->
+<!-- Modal Tambah Data Kategori Produk -->
 
 <div class="modal fade" id="modalTambahData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -84,9 +84,9 @@
         </div>
     </div>
 </div>
-<!-- Modal Tambah Data -->
+<!-- Modal Tambah Data Kategori Produk -->
 
-<!-- Modal Edit Data -->
+<!-- Modal Edit Data Kategori Produk -->
 <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -116,7 +116,7 @@
             <div class="modal-footer">
                 <input type="hidden" name="id" id="edit-id" />
 
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tututp</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                 <button type="submit" class="btn btn-success">Update</button>
                 </form>
             </div>
@@ -124,9 +124,9 @@
     </div>
 </div>
 
-<!-- Modal Edit Data -->
+<!-- Modal Edit Data Kategori Produk -->
 
-<!-- Modal Hapus Data -->
+<!-- Modal Hapus Data Kategori Produk -->
 <div class="modal fade" id="modalDeleteData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -152,7 +152,7 @@
     </div>
 </div>
 
-<!-- Modal Hapus Data -->
+<!-- Modal Hapus Data Kategori Produk -->
 @stop
 
 @section('js')
@@ -166,14 +166,6 @@
             $('#edit-description').val(description);
             $('#edit-id').val(id);
 
-            // $.ajax({
-            //     type: "get",
-            //     url: baseurl + '/admin/ajaxadmin/dataCategories/' + id,
-            //     dataType: 'json',
-            //     success: function(res) {
-            //         console.log(res);
-            //     },
-            // });
         });
 
         $(document).on('click', '#btn-delete-categories', function() {

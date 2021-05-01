@@ -63,7 +63,7 @@
     </div>
 </div>
 
-<!-- Modal Tambah User  -->
+<!-- Modal Tambah User/Admin  -->
 <div class="modal fade" id="modalTambahUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -107,17 +107,6 @@
                             </select>
 
                         </div>
-                        <!-- <div class="input-group">
-                            <input type="text" name="roles_id" id="roles_id" class="form-control" aria-label="Text input with dropdown button">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pilih</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#roles_id" aria-valuetext="Admin">Admin</a>
-                                    <a class="dropdown-item" href="#roles_id" aria-valuetext="User">User</a>
-
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="form-group">
                         <label for="photo">Foto Profil</label>
@@ -133,9 +122,9 @@
         </div>
     </div>
 </div>
-<!-- Modal Tambah User  -->
+<!-- Modal Tambah User/Admin  -->
 
-<!-- Modal Edit User -->
+<!-- Modal Edit User/Admin -->
 <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -177,16 +166,6 @@
                                     </select>
 
                                 </div>
-                                <!-- <div class="input-group">
-                                    <input type="text" name="roles_id" id="edit-roles_id" class="form-control" aria-label="Text input with dropdown button">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pilih</button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#roles_id" aria-valuetext="Admin">Admin</a>
-                                            <a class="dropdown-item" href="#roles_id" aria-valuetext="User">User</a>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -208,9 +187,9 @@
         </div>
     </div>
 </div>
-<!-- Modal Edit User -->
+<!-- Modal Edit User/Admin -->
 
-<!-- Modal Delete User -->
+<!-- Modal Delete User/Admin -->
 <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -236,8 +215,7 @@
         </div>
     </div>
 </div>
-
-<!-- Modal Delete User -->
+<!-- Modal Delete User/Admin -->
 
 
 
@@ -272,30 +250,6 @@
                 $('#image-area').append('[Gambar tidak tersedia]');
             }
 
-
-            // $.ajax({
-            //     type: "get",
-            //     url: baseurl + '/admin/ajaxadmin/dataUser/' + id,
-            //     dataType: 'json',
-            //     success: function(res) {
-            //         console.log(res);
-            //         $('#edit-name').val(res.name);
-            //         $('#edit-username').val(res.username);
-            //         $('#edit-email').val(res.email);
-            //         $('#edit-password').val(res.password);
-            //         $('#edit-roles_id').val(res.roles_id);
-            //         $('#edit-id').val(res.id);
-            //         $('#edit-old-photo').val(res.photo);
-
-            //         if (res.photo !== null) {
-            //             $('#image-area').append(
-            //                 "<img src='" + baseurl + "/storage/photo_user/" + res.photo + "' width='200px'/>"
-            //             );
-            //         } else {
-            //             $('#image-area').append('[Gambar tidak tersedia]');
-            //         }
-            //     },
-            // });
         });
 
         $(document).on('click', '#btn-delete-user', function() {

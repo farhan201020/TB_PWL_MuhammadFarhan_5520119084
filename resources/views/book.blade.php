@@ -219,7 +219,7 @@
 <script>
     $(function() {
         $("#datepicker").datepicker({
-            format: "yyyy", // Notice the Extra space at the beginning
+            format: "yyyy", 
             viewMode: "years",
             minViewMode: "years"
         });

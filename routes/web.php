@@ -146,6 +146,20 @@ Route::get('admin/pengelolaan_produk', [App\Http\Controllers\ProdukController::c
     ->name('admin.product')
     ->middleware('is_admin');
 
+//Route Tambah Pengelolaan Produk
 Route::post('admin/pengelolaan_produk', [ProdukController::class, 'add_product'])
     ->name('admin.product.submit')
     ->middleware('is_admin');
+
+Route::patch('admin/pengelolaan_produk/update', [ProdukController::class, 'edit_product'])
+    ->name('admin.product.update')
+    ->middleware('is_admin');
+Route::get('admin/ajaxadmin/dataProduct/{id}', [ProdukController::class, 'getDataProduct']);
+
+//delete data
+Route::delete('admin/pengelolaan_produk/delete',[ProdukController::class, 'destroy'])
+->name('admin.product.delete')
+->middleware('is_admin');
+
+
+

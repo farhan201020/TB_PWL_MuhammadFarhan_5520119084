@@ -55,7 +55,7 @@
     </div>
 </div>
 
-<!-- Modal Tambah Data -->
+<!-- Modal Tambah Data Merek Barang -->
 <div class="modal fade" id="modalTambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -87,10 +87,10 @@
         </div>
     </div>
 </div>
-<!-- Modal Tambah Data -->
+<!-- Modal Tambah Data Merek Barang -->
 
 
-<!-- Modal Edit Data -->
+<!-- Modal Edit Data Merek Barang -->
 <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -127,10 +127,10 @@
         </div>
     </div>
 </div>
-<!-- Modal Edit Data -->
+<!-- Modal Edit Data Merek Barang -->
 
 
-<!-- Modal Delete Data -->
+<!-- Modal Delete Data Merek Barang -->
 <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -155,7 +155,7 @@
         </div>
     </div>
 </div>
-<!-- Modal Delete Data -->
+<!-- Modal Delete Data Merek Barang -->
 
 
 

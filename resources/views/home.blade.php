@@ -15,9 +15,6 @@
 
                     @else ($user->roles_id ==2)
                     Your loged as user
-                    <!-- <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div> -->
                     @endif
 
 
