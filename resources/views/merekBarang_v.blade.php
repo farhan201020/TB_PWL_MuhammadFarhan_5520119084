@@ -141,14 +141,14 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin ingin menghapus Data Merek Produk <strong class="" id="delete-nama"></strong>?
+                Apakah anda yakin ingin menghapus Data Merek Produk <strong class="font-italic" id="delete-nama"></strong>?
                 <form method="post" action="{{ route('admin.brand.delete') }}" enctype="multipart/form-data">
                     @csrf
                     @method('DELETE')
             </div>
             <div class="modal-footer">
                 <input type="hidden" name="id" id="delete-id" value="" />
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                 <button type="submit" class="btn btn-danger">Hapus</button>
                 </form>
             </div>

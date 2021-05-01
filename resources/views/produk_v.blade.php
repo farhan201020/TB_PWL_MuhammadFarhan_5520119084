@@ -70,7 +70,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Tambah Data PRODUK</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Data Produk</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -82,11 +82,11 @@
             <div class="row">
               <div class="form-group col-md-6">
                 <label for="name">Nama</label>
-                <input type="text" name="name" placeholder="Masukan Nama Barang" class="form-control" name="name" id="name" required />
+                <input type="text" name="name" placeholder="Masukan Nama Produk" class="form-control" name="name" id="name" required />
               </div>
               <div class="form-group col-md-6 ml-auto">
-                <label for="stok">Jumlah</label>
-                <input type="number" min="0" class="form-control" placeholder="Masukan Jumlah" name="stok" id="stok" required />
+                <label for="stok">Stok</label>
+                <input type="number" min="0" class="form-control" placeholder="Masukan Jumlah Stok" name="stok" id="stok" required />
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Data Product</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Edit Data Pengelolaan Produk</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -169,7 +169,7 @@
                 <input type="text" class="form-control" name="name" id="edit-name" required />
               </div>
               <div class="form-group">
-                <label for="edit-jumlah">Jumlah</label>
+                <label for="edit-jumlah">Stok</label>
                 <input type="number" class="form-control" name="stok" id="edit-jumlah" required />
               </div>
               <div class="form-group">
@@ -223,7 +223,7 @@
       <div class="modal-footer">
         <input type="hidden" name="id" id="edit-id" />
         <input type="hidden" name="old_photo" id="edit-old-photo" />
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
         <button type="submit" class="btn btn-success">Update</button>
         </form>
       </div>
@@ -236,13 +236,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Delete Data</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Hapus Produk</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Are you sure want to delete this data <strong class="font-italic" id="delete-name"></strong>?
+        Apakah anda ingin menghapus data produk ini  <strong class="font-italic" id="delete-nama"></strong>?
         <form method="post" action="{{ route('admin.product.delete') }}" enctype="multipart/form-data">
           @csrf
           @method('DELETE')
@@ -250,8 +250,8 @@
       <div class="modal-footer">
         <input type="hidden" name="id" id="delete-id" value="" />
         <input type="hidden" name="old_photo" id="delete-old-photo" />
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        <button type="submit" class="btn btn-danger">Hapus</button>
         </form>
       </div>
     </div>
