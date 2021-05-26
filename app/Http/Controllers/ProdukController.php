@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Product;
+use PDF;
 
 class ProdukController extends Controller
 {
@@ -101,5 +102,21 @@ class ProdukController extends Controller
         );
 
         return redirect()->route('admin.product')->with($notification);
+        
+    }
+    
+    public function print_laporan()
+    {
+        $laporan = Product::all();
+
+        $pdf = PDF::loadview('print_laporan', ['laporan' => $laporan]);
+        return $pdf->stream('data_laporan.pdf');
+    }
+
+    public function laporan_masuk()
+    {
+        $user = Auth::user();
+        $barang = Product::all();
+        return view('laporan_masuk_v', compact('user', 'barang'));
     }
 }

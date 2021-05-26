@@ -266,23 +266,23 @@ return [
             'submenu' => [
                 [
                     'text' => 'Laporan Barang Masuk',
-                    'url'  => 'admin/laporan/masuk',
+                    'url'  => 'admin/laporan_masuk_v',
                     'icon' => 'fas fa-sign-in-alt',
                 ],
                 [
                     'text'    => 'Laporan Barang Keluar',
-                    'url'     => 'admin/laporan/keluar',
+                    'url'     => 'admin/laporan_keluar',
                     'icon' => 'fas fa-sign-out-alt',
                 ],
             ],
         ],
 
-        [
-            'text'        => 'Book',
-            'url'         => 'admin/books',
-            'icon'        => 'fas fa-fw fa-book',
-            'can'         => 'isAdmin',
-        ],
+        // [
+        //     'text'        => 'Book',
+        //     'url'         => 'admin/books',
+        //     'icon'        => 'fas fa-fw fa-book',
+        //     'can'         => 'isAdmin',
+        // ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',

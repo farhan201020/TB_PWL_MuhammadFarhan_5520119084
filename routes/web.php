@@ -161,5 +161,15 @@ Route::delete('admin/pengelolaan_produk/delete',[ProdukController::class, 'destr
 ->name('admin.product.delete')
 ->middleware('is_admin');
 
+//Laporan Masuk dan Keluar
+Route::get('admin/laporan_masuk',[ProdukController::class, 'print_laporan'])
+                ->name('admin.print.laporan')
+                ->middleware('is_admin');
+
+Route::get('admin/laporan_masuk_v',[ProdukController::class, 'laporan_masuk']);
+
+
+
+
 
 
